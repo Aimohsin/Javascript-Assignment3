@@ -1,0 +1,27 @@
+var color = ["Purple", "Green", "Yellow"];
+document.write("A<br>");
+document.write(color + "<br>");
+alert(color);
+var q1 = prompt("What color he/she wants to add to the beginning");
+color.unshift(q1);
+alert(color);
+document.write("B<br>" +color + "<br>");
+var q2 = prompt("What color he/she wants to add to the end");
+color.push(q2);
+alert(color);
+document.write("C<br>" + color + "<br>");
+color.unshift("Pink", "Red");
+alert(color);
+document.write("D<br>" + color + "<br>");
+color.shift();
+alert(color);
+document.write("E<br>" + color + "<br>");
+var q3 = prompt("At which position you want to add color?");
+var q4 = prompt("Color Name?")
+color.splice(q3, 0, q4);
+alert(color);
+document.write("F<br>" + color + "<br>");
+var q5 = prompt("Which color do you want to delete");
+color.splice(0, 1, q5);
+alert(color);
+document.write("G<br>" + color + "<br>");
